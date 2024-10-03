@@ -5,12 +5,12 @@
 import statistics
 class Student:
     def __init__(self, name, grade):
-        self.name = name # Private data member for student's name
-        self.grade = grade # Private data member for student's grade
+        self._name = name # Private data member for student's name
+        self._grade = grade #Private data member for student's grade
     def get_grade(self):
-        return self.grade
-def basic_states (student_list):
-    grade = [student.get_grade() for student in student_list]
+        return self._grade
+def basic_stats (student_list):
+    grades = [student.get_grade() for student in student_list]
     mean_value = statistics.mean(grades)
     median_value = statistics.median(grades)
     mode_value = statistics.mode(grades)
