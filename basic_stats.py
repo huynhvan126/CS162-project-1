@@ -4,7 +4,7 @@
 # Description: Write a class called Student that has two private data members - the student's name and grade.
 import statistics
 class Student:
-    def __init__(self, name, grade, grade):
+    def __init__(self, name, grade):
         self.name = name # Private data member for student's name
         self.grade = grade # Private data member for student's grade
     def get_grade(self):
